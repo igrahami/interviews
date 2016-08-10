@@ -37,6 +37,6 @@ object CsvAddressBookApp extends App {
   val addressBookApp = new AddressBookApp("AddressBook") with ClasspathAddressBookReader with CsvParser
 
   println(s"There are ${addressBookApp.howMany(Male)} males in the address book")
-  println(s"${addressBookApp.whoIsOldest} is the oldest person in the address book")
+  println(s"${addressBookApp.whoIsOldest.get} is the oldest person in the address book")
   println(s"Bill is ${addressBookApp.ageDifference("Bill McKnight","Paul Robinson")} than Paul")
 }
