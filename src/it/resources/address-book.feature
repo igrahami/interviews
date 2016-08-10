@@ -7,12 +7,10 @@ Feature: Address-book
     When I ask for the number of Male
     Then the result is 3
 
-  @todo
   Scenario: Who is the oldest person in the address book
     When I ask for who the oldest person is
     Then the result is Wes Jackson
 
-  @todo
   Scenario: How many days older is Bill than Paul
-    When I ask how many days older Bill is than Paul
+    When I ask how many days older Bill McKnight is than Paul Robinson
     Then the result is 2862

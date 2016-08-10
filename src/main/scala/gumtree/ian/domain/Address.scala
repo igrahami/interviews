@@ -1,7 +1,5 @@
 package gumtree.ian.domain
 
-import java.util.Date
-
 import gumtree.ian.parser.ParsingException
 
 sealed class Gender
@@ -19,9 +17,3 @@ object Gender {
 }
 
 case class AddressEntry(name: String, gender: Gender, dob: java.time.LocalDate)
-
-//object AddressEntry {
-//  def apply(csvLine: String): AddressEntry = {
-//    ???
-//  }
-//}
