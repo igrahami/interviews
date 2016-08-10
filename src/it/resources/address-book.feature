@@ -3,7 +3,6 @@ Feature: Address-book
   Background:
     Given I have the application running with the default address book
 
-  @wip
   Scenario: How many males are in the address book
     When I ask for the number of Male
     Then the result is 3
