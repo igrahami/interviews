@@ -32,6 +32,9 @@ class AddressBookApp(filename: String) { self: AddressBookReader =>
   }
 }
 
+/*
+  Main app building with classpath file reader and csv parser
+ */
 object CsvAddressBookApp extends App {
   // add normal argument validation here
   val addressBookApp = new AddressBookApp("AddressBook") with ClasspathAddressBookReader with CsvParser

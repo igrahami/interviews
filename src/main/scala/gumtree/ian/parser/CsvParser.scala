@@ -5,6 +5,9 @@ import java.time.format.{DateTimeFormatter, DateTimeParseException}
 
 import gumtree.ian.domain.{AddressEntry, Gender}
 
+/*
+  CSV specific line parser
+ */
 trait CsvParser extends AddressBookParser {
   override lazy val dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yy")
 
